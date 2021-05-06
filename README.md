@@ -22,15 +22,15 @@ For more information, contact minseo0388@daum.net or 129dot03@kakao.com.
 [![Coverage Status](https://coveralls.io/repos/github/minseo0388/naesungmath/badge.svg?branch=master)](https://github.com/minseo0388/naesungmath)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5abbae229dbcd797e9ce/maintainability)](https://github.com/minseo0388/naesungmath)
 
-## npm package 배포
+## deno package 배포
 
-**npmjs.org에 `Naesungmath`로 배포됩니다.**
+**deno.land/x에 `Naesungmath`로 배포됩니다.**
 
-**Published as `Naesungmath` at npmjs.org**
+**Published as `Naesungmath` at deno.land/x**
 
-**최신 안정화 버전은 `2.1.0` 입니다.**
+**최신 안정화 버전은 `1.0.0` 입니다.**
 
-**The latest stabilized version is `2.1.0`.**
+**The latest stabilized version is `1.0.0`.**
 
 ### Update Notice
 
@@ -55,10 +55,6 @@ Or with yarn:
 [@AkiaCode](https://github.com/akiacode) [@DPS0340](https://github.com/dps0340) [@comjun04](https://github.com/comjun04)
 
 ## License
-
-**라이선스 오류로 인해 소스 코드의 라이선스가 중복 표기되었습니다. 2.0.0 버전 부터 MIT 라이선스로 복구합니다.**
-
-**License error caused the source code to be duplicated. Recover from version 2.0.0 to MIT license.**
 
 MIT License
 
