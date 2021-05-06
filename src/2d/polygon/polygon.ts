@@ -6,7 +6,7 @@
  * @return {number} The number of diagonal of polygon
  * 
  */
-export function polydiag(n) {
+export function polydiag(n : number) {
     return (n * (n - 3) / 2)
 }
 
@@ -18,7 +18,7 @@ export function polydiag(n) {
  * @return {number} The sum of the polygons cabinet (degree)
  * 
  */
-export function polyAngleSumDeg(n) {
+export function polyAngleSumDeg(n : number) {
     return (180 * (n - 2))
 }
 
@@ -30,7 +30,7 @@ export function polyAngleSumDeg(n) {
  * @return {number} The sum of the polygons cabinet (radian)
  * 
  */
-export function polyAngleSumRad(n) {
+export function polyAngleSumRad(n : number) {
     return ((Math.PI) * (n - 2))
 }
 
@@ -43,7 +43,7 @@ export function polyAngleSumRad(n) {
  * @return {number} The area of regular polygons
  * 
  */
-export function polyarea(n, a) {
+export function polyarea(n : number, a : number) {
     return n * (a ** 2) / (4 * (Math.tan(a / (Math.PI))))
 }
 
@@ -55,7 +55,7 @@ export function polyarea(n, a) {
  * @return {number} The sum of cabinet of polygon (degree)
  * 
  */
-export function polyAngle_Deg(n) {
+export function polyAngle_Deg(n : number) {
     return (180 * (n - 2) / n)
 }
 
@@ -67,6 +67,6 @@ export function polyAngle_Deg(n) {
  * @return {number} The sum of cabinet of polygon (radian)
  * 
  */
-export function polyAngle_Rad(n) {
+export function polyAngle_Rad(n : number) {
     return ((Math.PI) * (n - 2) / n)
 }

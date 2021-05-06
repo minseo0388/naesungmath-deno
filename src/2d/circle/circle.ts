@@ -9,7 +9,7 @@
  * @return {number} Inscribed circle and triangle area formula
  * 
  */
-export function inscribedCircleTriangleArea(a, b, c, r) {
+export function inscribedCircleTriangleArea(a : number, b : number, c : number, r : number) {
     return (((a + b + c) / 2) * r)
 }
 
@@ -24,7 +24,7 @@ export function inscribedCircleTriangleArea(a, b, c, r) {
  * @return {number} Inscribed circle and triangle area formula
  * 
  */
-export function circumscribedCircleTriangleArea_Side(a, b, c, r) {
+export function circumscribedCircleTriangleArea_Side(a : number, b : number, c : number, r : number) {
     return (a * b * c / 4 / r)
 }
 
@@ -39,7 +39,7 @@ export function circumscribedCircleTriangleArea_Side(a, b, c, r) {
  * @return {number} Inscribed circle and triangle area formula 
  * 
  */
-export function circumscribedCircleTriangleArea_Angle(a, b, c, r) {
+export function circumscribedCircleTriangleArea_Angle(a : number, b : number, c : number, r : number) {
     return (2 * r * r * (Math.sin(a)) * (Math.sin(b)) * (Math.sin(c)))
 }
 
@@ -51,7 +51,7 @@ export function circumscribedCircleTriangleArea_Angle(a, b, c, r) {
  * @return {number} The area of circle
  * 
  */
-export function circleArea(r) {
+export function circleArea(r : number) {
     return ((Math.PI) * (r ** 2))
 }
 
@@ -63,7 +63,7 @@ export function circleArea(r) {
  * @return {number} The circumstance of circle
  * 
  */
-export function circlePerimeter(r) {
+export function circlePerimeter(r : number) {
     return (2 * (Math.PI) * r)
 }
 
@@ -75,7 +75,7 @@ export function circlePerimeter(r) {
  * @return {number} The center angle of circumferential angle
  * 
  */
-export function circumference(a) {
+export function circumference(a : number) {
     return (2 * a)
 }
 
@@ -88,7 +88,7 @@ export function circumference(a) {
  * @return {number} The center angle of sector form (radian)
  * 
  */
-export function circularSectorAngle(r, l) {
+export function circularSectorAngle(r : number, l : number) {
     return (l / r)
 }
 
@@ -101,7 +101,7 @@ export function circularSectorAngle(r, l) {
  * @return {number} THe area of sector form
  * 
  */
-export function circularSectorArea_rt(r, t) {
+export function circularSectorArea_rt(r : number, t : number) {
     return (0.5 * r * (t ** 2))
 }
 
@@ -114,7 +114,7 @@ export function circularSectorArea_rt(r, t) {
  * @return {number} The area of sector form
  * 
  */
-export function circularSectorArea_rl(r, l) {
+export function circularSectorArea_rl(r : number, l : number) {
     return (0.5 * r * l)
 }
 
@@ -127,7 +127,7 @@ export function circularSectorArea_rl(r, l) {
  * @return {number} The length of arc
  * 
  */
-export function arcLength(r, l) {
+export function arcLength(r : number, l : number) {
     return (r * l)
 }
 
@@ -139,6 +139,6 @@ export function arcLength(r, l) {
  * @return {number} Convert degree to radian
  * 
  */
-export function degreeToRad(deg) {
+export function degreeToRad(deg : number) {
     return deg * Math.PI / 180
 }

@@ -7,7 +7,7 @@
  * @return {number} The length of the hypotenuse when each side is a, b in a right triangle
  * 
  */
- export function pytagoras(a, b) {
+ export function pytagoras(a : number, b : number) {
     return ((a * a + b * b) ** 0.5)
 }
 
@@ -21,7 +21,7 @@
  * @return {number} Area of triangle using angle
  * 
  */
-export function triangleAreaAngle(a, b, t) {
+export function triangleAreaAngle(a : number, b : number, t : number) {
     return (0.5 * a * b * (Math.sin(t)))
 }
 /**
@@ -33,7 +33,7 @@ export function triangleAreaAngle(a, b, t) {
  * @return {number} Area of right triangle with each side a and b
  * 
  */
-export function rtria(a, b) {
+export function rtria(a : number, b : number) {
     return (0.5 * a * b)
 }
 /**
@@ -45,7 +45,7 @@ export function rtria(a, b) {
  * @return {number} The length of an isosceles triangle with equal side a and base b
  * 
  */
-export function quadtria(a, b) {
+export function quadtria(a : number, b : number) {
     return (a / 4 * (4 * b * b - a * a) ** 0.5)
 }
 
@@ -59,7 +59,7 @@ export function quadtria(a, b) {
  * @return {number} Heron's formula
  * 
  */
-export function heron(a, b, c) {
+export function heron(a : number, b : number, c : number) {
     let cosTheta = ((a * a) + (b * b) - (c * c)) / (2 * a * b)
     let sinTheta = Math.sqrt(1 - (cosTheta ** 2))
     return (a * b * sinTheta) / 2
@@ -89,8 +89,8 @@ export function heron(a, b, c) {
  * @return {number} The center of gravity of the triangle using the coordinates of the vertices
  * 
  */
-export function centerGravity(a1, a2, b1, b2, c1, c2) {
-    return ((a1 + b1 + c1) / 3)((a2 + b2 + c2) / 3)
+export function centerGravity(a1 : number, a2 : number, b1 : number, b2 : number, c1 : number, c2 : number) {
+    return ((a1 + b1 + c1) / 3) * ((a2 + b2 + c2) / 3)
 }
 /**
  * 001 ���ﰢ���� ����
@@ -100,7 +100,7 @@ export function centerGravity(a1, a2, b1, b2, c1, c2) {
  * @return {number} a plus b
  * 
  */
-export function equilateralTriangleArea(a) {
+export function equilateralTriangleArea(a : number) {
     return 3 ** 0.5 / 4 * a * a
 }
 /**
@@ -112,6 +112,6 @@ export function equilateralTriangleArea(a) {
  * @return {number} a plus b
  * 
  */
-export function equilateralTriangleHeight(a) {
+export function equilateralTriangleHeight(a : number) {
     return (3 ^ 0.5 / 2 * a)
 }

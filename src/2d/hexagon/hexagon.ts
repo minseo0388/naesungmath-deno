@@ -7,6 +7,6 @@
  * @return {number} The area of hexagon with on side a
  * 
  */
-export function hexagonArea(a) {
+export function hexagonArea(a : number) {
     return ((3 * ((3) ^ 0.5)) / 2) * (a ** 2)
 }
