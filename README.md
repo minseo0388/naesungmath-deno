@@ -28,9 +28,9 @@ For more information, contact minseo0388@daum.net or 129dot03@kakao.com.
 
 **Published as `Naesungmath` at npmjs.org**
 
-**최신 안정화 버전은 `2.0.0` 입니다.**
+**최신 안정화 버전은 `2.1.0` 입니다.**
 
-**The latest stabilized version is `2.0.0`.**
+**The latest stabilized version is `2.1.0`.**
 
 ### Update Notice
 
