@@ -7,7 +7,7 @@
  * @return {number} a + b
  * 
  */
-export function plus(a, b) {
+export function plus(a : number, b : number) {
     return a + b
 }
 /**
@@ -31,7 +31,7 @@ export function round(a) {
  * @return {number} (a, b)
  * 
  */
-export function pow(a, b) {
+export function pow(a : number, b : number) {
     return Math.pow(a, b)
 }
 /**
@@ -43,7 +43,7 @@ export function pow(a, b) {
  * @return {number} a ^ b
  * 
  */
-export function caret(a, b) {
+export function caret(a : number, b : number) {
     return a ** b
 }
 /**
@@ -55,7 +55,7 @@ export function caret(a, b) {
  * @return {number} a / b
  * 
  */
-export function divide(a, b) {
+export function divide(a : number, b : number) {
     return a / b
 }
 /**
@@ -67,7 +67,7 @@ export function divide(a, b) {
  * @return {number} gcd
  * 
 */
-export function gcd(a, b) {
+export function gcd(a : number, b : number) {
     if (b === 0) {
         return a
     } else {
@@ -82,7 +82,7 @@ export function gcd(a, b) {
  * @return {number} IsInRange
  * 
  */
-export function isinrange(a, b) {
+export function isinrange(a : number, b : number) {
     let g = function (x) {
         if (a <= x && x <= b) {
             return true
@@ -101,7 +101,7 @@ export function isinrange(a, b) {
  * @return {number} a - b
  * 
  */
-export function minus(a, b) {
+export function minus(a : number, b : number) {
     return a - b
 }
 /**
@@ -113,7 +113,7 @@ export function minus(a, b) {
  * @return {number} a * b
  * 
  */
-export function multiply(a, b) {
+export function multiply(a : number, b : number) {
     return a * b
 }
 /**
@@ -125,7 +125,7 @@ export function multiply(a, b) {
  * @return {number} Area of triangle given base and height
  * 
  */
-export function triangleAreaSide(a, h) {
+export function triangleAreaSide(a : number, h : number) {
     return (0.5 * a * h)
 }
 /**
@@ -136,7 +136,7 @@ export function triangleAreaSide(a, h) {
  * @return {number} change a to radian
  * 
  */
-export function radian(a) {
+export function radian(a : number) {
     return 2 * Math.PI * a
 }
 /**
@@ -148,7 +148,7 @@ export function radian(a) {
  * @return {number} random number from a to b
  * 
  */
-export function random(a, b) {
+export function random(a : number, b : number) {
     var ranNum = Math.floor((Math.random() * b) + a)
     return ranNum
 }
@@ -163,7 +163,7 @@ export function random(a, b) {
  */
 
 export function Root() { // �Լ��ƴ� ������Ÿ����
-    this.get = function (val, digit_) {
+    this.get = function (val : number, digit_ : number) {
         let digit = digit_ || 10
         return parseFloat((val ** 0.5).toFixed(digit))
     }
@@ -181,6 +181,6 @@ exports.root = new Root()
  * @return {number} root a
  * 
  */
-export function sqrt(a) {
+export function sqrt(a : number) {
     return Math.sqrt(a)
 }

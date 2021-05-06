@@ -8,7 +8,7 @@
  * @return {number} Arithmetic progression
  
  */
-export function arithmeticProgression(a, d, n) {
+export function arithmeticProgression(a : number, d : number, n : number) {
     return (a + (n - 1) * d)
 }
 
@@ -22,7 +22,7 @@ export function arithmeticProgression(a, d, n) {
  * @return {number} Arithmetic progression
  
  */
-export function arithmeticProgression_n(d, n, s) {
+export function arithmeticProgression_n(d : number, n : number, s : number) {
     return (s - (n - 1) * d)
 }
 
@@ -36,7 +36,7 @@ export function arithmeticProgression_n(d, n, s) {
  * @return {number} Arithmetic progression
  
  */
-export function arithmeticProgression_d(a, n, s) {
+export function arithmeticProgression_d(a : number, n : number, s : number) {
     return ((s - a) / (n - 1))
 }
 
@@ -50,7 +50,7 @@ export function arithmeticProgression_d(a, n, s) {
  * @return {number} Arithmetic progression
  
  */
-export function arithmeticProgressionSum_Term(a1, an, n) {
+export function arithmeticProgressionSum_Term(a1 : number, an : number, n : number) {
     return (((a1 + an) / 2) * n)
 }
 
@@ -64,7 +64,7 @@ export function arithmeticProgressionSum_Term(a1, an, n) {
  * @return {number} Arithmetic progression
  
  */
-export function arithmeticProgressionSum(a1, n, d) {
+export function arithmeticProgressionSum(a1 : number, n : number, d : number) {
     return ((((2 * a1) + ((n - 1) * d)) / 2) * n)
 }
 
@@ -78,7 +78,7 @@ export function arithmeticProgressionSum(a1, n, d) {
  * @return {number} Geometric progression
  
  */
-export function geometricProgression_a(an, n, r) {
+export function geometricProgression_a(an : number, n : number, r : number) {
     return (an / (r ** n))
 }
 
@@ -92,7 +92,7 @@ export function geometricProgression_a(an, n, r) {
  * @return {number} Geometric progression
  
  */
-export function geometricProgression_n(an, a, r) {
+export function geometricProgression_n(an : number, a : number, r : number) {
     return Math.log(an / a) / Math.log(r)
 }
 
@@ -106,7 +106,7 @@ export function geometricProgression_n(an, a, r) {
  * @return {number} Geometric progression
  
  */
-export function geometricProgress_r(an, a, n) {
+export function geometricProgress_r(an : number, a : number, n : number) {
     return ((an / a) ** (1 / n))
 }
 
@@ -120,7 +120,7 @@ export function geometricProgress_r(an, a, n) {
  * @return {number} Geometric progression
  
  */
-export function geometricProgression_an(a, n, r) {
+export function geometricProgression_an(a : number, n : number, r : number) {
     return (a * (r ** n))
 }
 
@@ -133,7 +133,7 @@ export function geometricProgression_an(a, n, r) {
  * @param {number} n
  * @return {number} Sum of geometric progression 
  */
-export function geometricProgressionSum(a, r, n) {
+export function geometricProgressionSum(a : number, r : number, n : number) {
     return a * (1 - (r**n)) / (1 - r)
 }
 
@@ -145,7 +145,7 @@ export function geometricProgressionSum(a, r, n) {
  * @param {number} r
  * @return {number} Sum of infinite geometric progression
  */
-export function geometricProgressionInfinitySum(a, r) {
+export function geometricProgressionInfinitySum(a : number, r : number) {
     return a / (1 - r)
 }
 
@@ -157,7 +157,7 @@ export function geometricProgressionInfinitySum(a, r) {
  * @param {number} k 
  * @return {number} Sum of progress which number is consisted of consecutive numbers
  */
-export function sigma(n, k) {
+export function sigma(n : number, k : number) {
     return (((1 / 2) * n * (n + 1)) - ((1 / 2) * k * (k + 1)))
 }
 
@@ -169,7 +169,7 @@ export function sigma(n, k) {
  * @param {number} k 
  * @return {number} Sum of progress which number is consisted of the squares of numbers 
  */
-export function sigmaSquare(n, k) {
+export function sigmaSquare(n : number, k : number) {
     return (((1 / 6) * n * (n + 1) * ((2 * n) + 1)) - ((1 / 6) * k * (k + 1) * ((2 * k) + 1)))
 }
 
@@ -181,7 +181,7 @@ export function sigmaSquare(n, k) {
  * @param {number} k 
  * @return {number} Sum of progress which number is consisted of the cubic number 
  */
-export function sigmaCube(n, k)  {
+export function sigmaCube(n : number, k : number)  {
     return (((1 / 4) * (n ** 2) * ((n + 1) ** 2)) - ((1 / 4) * (k ** 2) * ((k + 1) ** 2)))
 }
 
@@ -190,7 +190,7 @@ export function sigmaCube(n, k)  {
  * @param {number} x 
  * @return {number} Infinite series (the denominator is n! and the numerator is x to the power of k)
  */
-export function infiniteSeries_1(x) {
+export function infiniteSeries_1(x : number) {
     return (Math.E ** x)
 }
 
@@ -199,7 +199,7 @@ export function infiniteSeries_1(x) {
  * @param {number} x 
  * @return {number} Infinite series (The denominator is n! and the numerator is k times x to the power of k)
  */
-export function infiniteSeries_2(x) {
+export function infiniteSeries_2(x : number) {
     return (x * (Math.E ** x))
 }
 
@@ -208,7 +208,7 @@ export function infiniteSeries_2(x) {
  * @param {number} x 
  * @return {number} Infinite series (x to the power of k, |x| < 1)
  */
-export function infiniteSeries_3(x) {
+export function infiniteSeries_3(x : number) {
     if (x > 1 || x < -1 || x == 1 || x == -1) {
         console.log('Check |x| < 1')
     }
@@ -222,7 +222,7 @@ export function infiniteSeries_3(x) {
  * @param {number} x 
  * @return {number} Infinite series (k times x to the power of k, |x| < 1)
  */
-export function infiniteSeries_4(x) {
+export function infiniteSeries_4(x : number) {
     if (x > 1 || x < -1 || x == 1 || x == -1) {
         console.log('Check |x| < 1')
     }

@@ -43,7 +43,7 @@ export function ACORN(seed = new Date().getTime(), moduloPower = 60, order = 10)
  * 201 ���� ���
  * 
  * @author: DPS0340
- * @param {number} f
+ * @param {string} f
  * @param {number} count
  * @param {number} initx
  * @return Newton's method

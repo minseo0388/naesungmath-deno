@@ -6,6 +6,6 @@
  * @return {number} Convert radian to degree
  * 
  */
-export function radToDegree(rad) {
+export function radToDegree(rad : number) {
     return rad * 180 / Math.PI
 }
