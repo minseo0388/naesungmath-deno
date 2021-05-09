@@ -270,13 +270,10 @@ export function taylor(f, a, count) {
     }
 
     function res(x) {
-        // eslint-disable-next-line no-undef
-        result = 0
+        let result = 0
         for (let i = 0; i <= count; i++) {
-            // eslint-disable-next-line no-undef
             result += taylors[i](x)
         }
-        // eslint-disable-next-line no-undef
         return result
     }
 
@@ -292,5 +289,5 @@ export function taylor(f, a, count) {
  * 
  */
 export function maclaurin(f, count) {
-    return exports.taylor(f, 0, count)
+    return taylor(f, 0, count)
 }

@@ -17,7 +17,7 @@ export function plus(a : number, b : number) {
  * @return {number} pi
  * 
  */
-exports.pi = Math.PI
+export const pi = Math.PI
 
 export function round(a) {
     return Math.round(a)
@@ -71,7 +71,7 @@ export function gcd(a : number, b : number) {
     if (b === 0) {
         return a
     } else {
-        return exports.gcd(b, a % b)
+        return gcd(b, a % b)
     }
 }
 /**
@@ -149,7 +149,7 @@ export function radian(a : number) {
  * 
  */
 export function random(a : number, b : number) {
-    var ranNum = Math.floor((Math.random() * b) + a)
+    const ranNum = Math.floor((Math.random() * b) + a)
     return ranNum
 }
 /**
@@ -162,17 +162,14 @@ export function random(a : number, b : number) {
  * 
  */
 
-export function Root() { // �Լ��ƴ� ������Ÿ����
-    this.get = function (val : number, digit_ : number) {
-        let digit = digit_ || 10
+export function Root(a = 10) { // �Լ��ƴ� ������Ÿ����
+    this.get = function (val : number, digit : number = a) {
         return parseFloat((val ** 0.5).toFixed(digit))
-    }
-    for (let i = 2; i <= 10; i++) {
-        this[i.toString()] = this.get(i, 10)
     }
 }
 
-exports.root = new Root()
+export const root = new Root()
+
 /**
  * 000G ����
  * 
